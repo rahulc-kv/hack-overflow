@@ -32,13 +32,13 @@ const CountDown = (props) => {
   return (
     <>
       {remainingTime > 0 ? (
-        <div className='font-medium text-xs text-frenchBlue'>
+        <div className='text-xs font-medium text-frenchBlue'>
           {remainingTime < 86400
             ? `Starts in : ${getTimeStringFromSeconds(remainingTime, true)}`
             : `Starts in : ${getDayFromSeconds(remainingTime)}`}
         </div>
       ) : (
-        <div className='font-semibold text-xs text-green-500'>
+        <div className='text-xs font-semibold text-green-500'>
           Live Now
         </div>
       )
