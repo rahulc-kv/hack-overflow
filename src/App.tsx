@@ -10,6 +10,7 @@ import store from '@store/store';
 
 import '@styles/reset.css';
 import '@styles/global.css';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import PrivateLayout from '@routes/PrivateLayout';
 
 const App: React.FC = () => {
