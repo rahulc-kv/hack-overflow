@@ -1,17 +1,21 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import { useSelector } from 'react-redux';
 import { RootState } from '@store/reducers';
 import { heatMap } from './constants';
 import { heatMapLayerConfig, pointsLayerConfig } from './configs';
+import { useNavigate } from 'react-router-dom';
 
 const Map = () => {
+  const [markerAdded, setMarkerAdded] = useState(null);
   const mapContainer = useRef(null);
   const map = useRef<mapboxgl.Map>(null);
 
   const { events } = useSelector(
     (state: RootState) => state.rootReducer.eventsReducer
   );
+
+  const navigate = useNavigate();
 
   // eslint-disable-next-line max-len
   mapboxgl.accessToken =
@@ -24,7 +28,8 @@ const Map = () => {
       style: 'mapbox://styles/mapbox/outdoors-v11',
       center: [76.34127822976814, 10.016287638341907],
       // center: [-150.4048, 63.1224],
-      zoom: 6
+      zoom: 6,
+      projection: { name: 'globe' }
     });
 
     map.current.on('style.load', () => {
@@ -32,23 +37,32 @@ const Map = () => {
     });
 
     map.current.on('wheel', () => {
-      if (map.current.getZoom() >= 7) {
-        for (const event of events) {
-          // create a HTML element for each feature
-          const el = document.createElement('div');
-          el.className = 'marker';
-          el.id = 'heat-map-marker-event';
-
-          // make a marker for each feature and add it to the map
-          new mapboxgl.Marker(el)
-            .setLngLat(event.geometry.coordinates as [number, number])
-            .setPopup(
-              new mapboxgl.Popup({ offset: 25 }) // add popups
-                .setHTML(
-                  `<h3>${event.properties.title}</h3><p>${event.properties.description}</p>`
-                )
-            )
-            .addTo(map.current);
+      if (map.current.getZoom() >= 10) {
+        if (
+          document.querySelectorAll('[id=heat-map-marker-event]')?.length === 0
+        ) {
+          for (const event of events) {
+            // create a HTML element for each feature
+            const el = document.createElement('div');
+            el.className = 'marker';
+            el.id = 'heat-map-marker-event';
+            el.addEventListener('click', () => {
+              setMarkerAdded(event.properties.id);
+            });
+            // make a marker for each feature and add it to the map
+            new mapboxgl.Marker(el)
+              .setLngLat(event.geometry.coordinates as [number, number])
+              .setPopup(
+                new mapboxgl.Popup({ offset: 25 }) // add popups
+                  .setHTML(
+                    `<div id=${event.properties.id}>
+                    <h3 class="event-title">${event.properties.title}</h3>
+                    <p class="text-davyGrey">${event.properties.description}</p>
+                    <div>`
+                  )
+              )
+              .addTo(map.current);
+          }
         }
       } else {
         const el = document.querySelectorAll('[id=heat-map-marker-event]');
@@ -72,6 +86,18 @@ const Map = () => {
       map.current.addLayer(pointsLayerConfig as any, 'waterway-label');
     });
   }, []);
+
+  useEffect(() => {
+    if (markerAdded) {
+      document
+        .getElementById(markerAdded)
+        ?.addEventListener('click', () => onCardClick(markerAdded));
+    }
+  }, [markerAdded]);
+
+  const onCardClick = markerId => {
+    navigate(`/event-details/${markerId}`);
+  };
 
   return (
     <div>
