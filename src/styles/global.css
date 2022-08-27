@@ -87,18 +87,31 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .marker {
-  background-image: url('/public/images/hackoverflow.png');
+  background-image: url('/public/images/location-pin.png');
   background-size: cover;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 34px;
+  height: 44px;
+  /* border-radius: 50%; */
   cursor: pointer;
 }
 .mapboxgl-popup {
   max-width: 700px;
-  
 }
 .mapboxgl-popup-content {
+  padding: 15px !important;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+  border-radius: 6px !important;
+  cursor: pointer;
+}
+.event-title{
+  color: rebeccapurple;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.mapboxgl-popup-close-button{
+  padding: 8px;
+  outline: none;
+  visibility: hidden;
 }

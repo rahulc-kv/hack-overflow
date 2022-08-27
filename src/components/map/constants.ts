@@ -5,10 +5,114 @@ export const heatMap = {
   features: [
     {
       type: 'Feature',
-      properties: { mag: 9.3 },
+      properties: { mag: 3.3 },
       geometry: {
         type: 'Point',
-        coordinates: [76.34127822976814, 10.016287638341907]
+        coordinates: [76.3928, 10.026]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3086, 10.0265]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3086, 10.0265]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3086, 10.0265]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3086, 10.0265]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3572, 9.5048]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3572, 9.5048]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.1783, 10.1416]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3928, 10.026]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.2749, 9.981]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.2831, 9.9779]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3624, 10.0154]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [75.6059, 11.5601]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.316190759, 9.990441033]
       }
     }
     // { 'type': 'Feature', 'properties': { 'id': 'ak16994519', 'mag': 1.7, 'time': 1507425289659, 'felt': null, 'tsunami': 0 }, 'geometry': { 'type': 'Point', 'coordinates': [ -150.4048, 63.1224, 105.5 ] } },

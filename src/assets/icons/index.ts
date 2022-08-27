@@ -94,6 +94,10 @@ import { ReactComponent as WhiteEditIcon } from './whiteEditIcon.svg';
 import { ReactComponent as WithdrawalIcon } from './withdrawalIcon.svg';
 import { ReactComponent as ZebPayIcon } from './zebPayIcon.svg';
 import { ReactComponent as ZebPaySmallIcon } from './zebPaySmallIcon.svg';
+import { ReactComponent as UserIcon } from './user.svg';
+import { ReactComponent as FeedIcon } from './feed.svg';
+import { ReactComponent as SavedIcon } from './saved.svg';
+import { ReactComponent as ExploreIcon } from './explore.svg';
 
 export {
   AmericanExpressLogo,
@@ -182,6 +186,7 @@ export {
   TransferIcon,
   UpgradePlanIcon,
   UploadIcon,
+  UserIcon,
   VisaLogo,
   WalletIcon,
   WarningIcon,
@@ -191,5 +196,8 @@ export {
   WhiteEditIcon,
   WithdrawalIcon,
   ZebPayIcon,
-  ZebPaySmallIcon
+  ZebPaySmallIcon,
+  FeedIcon,
+  SavedIcon,
+  ExploreIcon
 };
