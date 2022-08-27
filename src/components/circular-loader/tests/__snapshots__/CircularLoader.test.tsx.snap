@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Full-screen Circularloader Rendered 1`] = `
+<div>
+  <div
+    className="flex justify-center items-center h-[500px]"
+  >
+    <img
+      alt="loader"
+      className="w-[80px] h-[80px]"
+      src="/images/fullScreenLoader.gif"
+    />
+  </div>
+</div>
+`;

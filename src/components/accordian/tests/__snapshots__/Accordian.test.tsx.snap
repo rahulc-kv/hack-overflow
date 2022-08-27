@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordian Rendered 1`] = `
+<div
+  className=" flex flex-col p-5 w-full rounded-md"
+>
+  <div
+    className=" flex justify-between items-center w-full cursor-pointer"
+    data-testid="accordianHeading"
+    onClick={[Function]}
+  >
+    <div
+      className="flex w-full"
+    >
+      
+    </div>
+    <svg
+      className="transform  rotate-180 
+             ml-2 opacity-100 duration-1000"
+    >
+      chevronDown.svg
+    </svg>
+  </div>
+  <div
+    className="overflow-hidden  duration-1000 transition-height ease opacity-100
+       visible max-h-[2000px]"
+  >
+    
+  </div>
+</div>
+`;

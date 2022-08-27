@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply text-primaryColor;
+  }
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #e9edf2;
+  height: 100%;
+  width: 100%;
+}
+
+/* for input label animation */
+input:not(:placeholder-shown) ~ .input-custom-label {
+  @apply bg-white text-davyGrey transform -translate-y-[27px] translate-x-1 scale-90 opacity-100;
+}
+input:focus ~ .input-custom-label {
+  @apply bg-white text-primaryColor transform -translate-y-[27px] translate-x-1 scale-90 opacity-100;
+}
+
+/* for textarea label animation */
+textarea:not(:placeholder-shown) ~ .textarea-custom-label {
+  @apply bg-white text-davyGrey transform -translate-y-[20px] translate-x-1 scale-90 opacity-100;
+}
+textarea:focus ~ .textarea-custom-label {
+  @apply bg-white text-primaryColor transform -translate-y-[20px] translate-x-1 scale-90 opacity-100;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+.customTransparentScroll {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+.customNormalScroll {
+  scrollbar-width: thin;
+  scrollbar-color: #5E7799;
+}
+
+/* Chrome, Edge, and Safari */
+.customTransparentScroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.customNormalScroll::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.customTransparentScroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.customNormalScroll::-webkit-scrollbar-track {
+  background: #dddddd;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.customTransparentScroll::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+.customNormalScroll::-webkit-scrollbar-thumb {
+  background-color: #b7b8bb;
+  border-radius: 8px;
+}
+
+/* to remove the up and down arrow of number input field */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

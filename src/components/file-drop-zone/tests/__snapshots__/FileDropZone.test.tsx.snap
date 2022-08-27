@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileDropZone drop 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="flex flex-col justify-center items-center px-2 py-[18px] text-center rounded-md border-[1px]
+        border-greyCloud cursor-not-allowed border-dashed"
+        role="presentation"
+      >
+        <svg
+          fill="#B4B7BD"
+        >
+          fileIcon.svg
+        </svg>
+        <input
+          accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.xlsx"
+          data-testid="dropInput"
+          multiple=""
+          style="display: none;"
+          tabindex="-1"
+          type="file"
+        />
+        <p
+          class="mt-[6px] text-sm font-normal text-davyGrey"
+        >
+          Drop or 
+          <span
+            style="color: rgb(126, 129, 141);"
+          >
+             Browse 
+          </span>
+           your file
+        </p>
+        <p
+          class="text-sm font-normal text-slateGrey "
+        >
+          .xlsx
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="flex flex-col justify-center items-center px-2 py-[18px] text-center rounded-md border-[1px]
+        border-greyCloud cursor-not-allowed border-dashed"
+      role="presentation"
+    >
+      <svg
+        fill="#B4B7BD"
+      >
+        fileIcon.svg
+      </svg>
+      <input
+        accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,.xlsx"
+        data-testid="dropInput"
+        multiple=""
+        style="display: none;"
+        tabindex="-1"
+        type="file"
+      />
+      <p
+        class="mt-[6px] text-sm font-normal text-davyGrey"
+      >
+        Drop or 
+        <span
+          style="color: rgb(126, 129, 141);"
+        >
+           Browse 
+        </span>
+         your file
+      </p>
+      <p
+        class="text-sm font-normal text-slateGrey "
+      >
+        .xlsx
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
