@@ -37,7 +37,7 @@ const Explore = () => {
 
   return (
     <>
-      <div className=" h-full max-h-screen">
+      <div className="w-full">
         <MainBar list={list} setList={setList} />
         {list ?
           (

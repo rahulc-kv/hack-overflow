@@ -38,7 +38,8 @@ const CountDown = (props) => {
             : `Starts in : ${getDayFromSeconds(remainingTime)}`}
         </div>
       ) : (
-        <div className='text-xs font-semibold text-green-500'>
+        <div className='flex flex-row items-center text-xs font-semibold text-davyGrey'>
+          <div className='mr-1 w-2 h-2 bg-green-500 rounded-full animate-opacity-anim'/>
           Live Now
         </div>
       )
