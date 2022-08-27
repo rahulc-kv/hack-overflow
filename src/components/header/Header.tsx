@@ -1,9 +1,6 @@
 import React from 'react';
 
-import { LocationIcon, PlusCircle } from '@assets/icons';
-import { Avatar } from '@mui/material';
-import { red } from '@mui/material/colors';
-
+import { LocationIcon, SettingsIcon } from '@assets/icons';
 const Header = () => {
 
     return (
@@ -22,8 +19,8 @@ const Header = () => {
                 </div>
             </div>
             <div className="flex absolute right-3 flex-row">
-                <div className="mt-1"><PlusCircle fill="#000000" className=" mr-2 w-9 h-9 " /> </div>
-                <div className="mt-[6px]"> <Avatar sx={{height:30,width:30, bgcolor: red[500] }}>N</Avatar></div>
+              
+                <div className="mt-1"><SettingsIcon fill="#000000" className=" mr-2 w-7 h-7 " /> </div>
 
             </div>
 
