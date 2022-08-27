@@ -2,7 +2,7 @@ export const heatMapLayerConfig = {
   id: 'events-heat',
   type: 'heatmap',
   source: 'events',
-  maxzoom: 7,
+  maxzoom: 9,
   paint: {
     // Increase the heatmap weight based on frequency and property magnitude
     'heatmap-weight': ['interpolate', ['linear'], ['get', 'mag'], 0, 0, 6, 1],
@@ -40,8 +40,8 @@ export const pointsLayerConfig = {
   id: 'events-point',
   type: 'circle',
   source: 'events',
-  minzoom: 6.5,
-  maxzoom: 7,
+  minzoom: 8.7,
+  maxzoom: 10.2,
   paint: {
     // Size circle radius by earthquake magnitude and zoom level
     'circle-radius': [
@@ -63,7 +63,7 @@ export const pointsLayerConfig = {
       2,
       'rgb(103,169,207)',
       3,
-      'rgb(209,229,240)',
+      'rgb(208,134,132)',
       4,
       'rgb(253,219,199)',
       5,
