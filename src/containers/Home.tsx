@@ -1,5 +1,6 @@
 /* eslint-disable max-len */
 import Cards from '@components/cards/Cards';
+import CountDown from '@components/count-down/CountDown';
 import React from 'react';
 
 import Carousel from '@components/carousel/Carousel';
@@ -32,6 +33,7 @@ const Home = () => {
           </div>
         ))}
       </div>
+      <CountDown eventStartDate="2022-08-27T18:29:29.940Z" />
       <Map />
       <Footer />
     </div>

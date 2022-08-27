@@ -49,7 +49,7 @@ const initialState = {
       },
       properties: {
         id: '4',
-        title: 'Reader\'s Fest 2022',
+        title: 'Readers Fest 2022',
         description: 'Book Fair'
       }
     },
