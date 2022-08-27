@@ -16,7 +16,15 @@ export const heatMap = {
       properties: { mag: 3.3 },
       geometry: {
         type: 'Point',
-        coordinates: [76.3086, 10.0265]
+        coordinates: [77.626579, 12.934533]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3087, 10.0265]
       }
     },
     {
@@ -32,15 +40,7 @@ export const heatMap = {
       properties: { mag: 3.3 },
       geometry: {
         type: 'Point',
-        coordinates: [76.3086, 10.0265]
-      }
-    },
-    {
-      type: 'Feature',
-      properties: { mag: 3.3 },
-      geometry: {
-        type: 'Point',
-        coordinates: [76.3086, 10.0265]
+        coordinates: [77.61575, 12.93358]
       }
     },
     {
@@ -56,7 +56,7 @@ export const heatMap = {
       properties: { mag: 3.3 },
       geometry: {
         type: 'Point',
-        coordinates: [76.3572, 9.5048]
+        coordinates: [76.3582, 9.5048]
       }
     },
     {
@@ -64,7 +64,7 @@ export const heatMap = {
       properties: { mag: 3.3 },
       geometry: {
         type: 'Point',
-        coordinates: [76.1783, 10.1416]
+        coordinates: [76.1793, 10.1416]
       }
     },
     {
@@ -72,7 +72,7 @@ export const heatMap = {
       properties: { mag: 3.3 },
       geometry: {
         type: 'Point',
-        coordinates: [76.3928, 10.026]
+        coordinates: [76.3938, 10.026]
       }
     },
     {
@@ -80,7 +80,7 @@ export const heatMap = {
       properties: { mag: 3.3 },
       geometry: {
         type: 'Point',
-        coordinates: [76.2749, 9.981]
+        coordinates: [76.2759, 9.981]
       }
     },
     {
@@ -113,6 +113,87 @@ export const heatMap = {
       geometry: {
         type: 'Point',
         coordinates: [76.316190759, 9.990441033]
+      }
+    },
+
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.5935277778, 8.89355555556]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.30896, 10.0265]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3453698, 10.01687]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3294, 9.9482]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.2465, 9.9686]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.2831, 9.9779]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.2429, 9.9640]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [76.9571, 8.5114]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [80.2692246437, 13.0010034739]
+      }
+    },
+    {
+      type: 'Feature',
+      properties: { mag: 3.3 },
+      geometry: {
+        type: 'Point',
+        coordinates: [80.2425, 13.0569]
       }
     }
     // { 'type': 'Feature', 'properties': { 'id': 'ak16994519', 'mag': 1.7, 'time': 1507425289659, 'felt': null, 'tsunami': 0 }, 'geometry': { 'type': 'Point', 'coordinates': [ -150.4048, 63.1224, 105.5 ] } },

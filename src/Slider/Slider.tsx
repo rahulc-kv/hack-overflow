@@ -6,7 +6,7 @@ import Cards from '@components/cards/Cards';
 const Slider = () => {
   const sliderHeaders = [
     {
-      title: 'Latest & Trending',
+      title: 'Categories',
       imgArray: [
         '/images/abc.jpg',
         '/images/abc1.jpg',
@@ -19,23 +19,23 @@ const Slider = () => {
     {
       title: 'Most Popular',
       imgArray: [
-        '/images/abc.jpg',
-        '/images/abc1.jpg',
-        '/images/abc2.jpg',
-        '/images/abc3.jpg',
-        '/images/abc4.jpg',
-        '/images/abc6.jpg'
+        '/images/abc9.jpg',
+        '/images/abc8.jpg',
+        '/images/abc7.jpg',
+        '/images/abc10.jpg',
+        '/images/abc11.jpg',
+        '/images/abc12.png'
       ]
     },
     {
       title: 'Recommended For You',
       imgArray: [
-        '/images/abc.jpg',
-        '/images/abc1.jpg',
-        '/images/abc2.jpg',
-        '/images/abc3.jpg',
-        '/images/abc4.jpg',
-        '/images/abc6.jpg'
+        '/images/abc16.jpg',
+        '/images/abc17.jpg',
+        '/images/abc21.jpg',
+        '/images/abc18.jpg',
+        '/images/abc19.jpg',
+        '/images/abc20.jpg'
       ]
     }
   ];
