@@ -9,13 +9,15 @@ const Footer = () => {
   };
   return (
     <>
-      <div className=" fixed bottom-0 w-full dark:border-gray-700">
+      <div className=" fixed bottom-0 mt-10 w-full dark:border-gray-700">
         <div className="flex flex-col w-full h-12 "></div>
         <footer
           className="fixed
              inset-x-0 bottom-0 
              text-3xl 
-             text-white
+             border-gray-500
+             text-white,
+             border-t-1
             ">
           <button
             className="w-1/4 h-12 text-sm font-bold text-white  bg-white 
@@ -26,7 +28,7 @@ const Footer = () => {
           </button>
           <button
             className="w-1/4 h-12 text-sm font-bold text-white  bg-white   outline-none "
-            onClick={()=>handleNavigate('explore')}>
+            onClick={() => handleNavigate('explore')}>
             <div className="flex gap-x-1 justify-center items-center">
               <ExploreIcon fill="#AEAEAE" className="w-5 h-5" />
             </div>

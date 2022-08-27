@@ -6,6 +6,8 @@ import React from 'react';
 import Carousel from '@components/carousel/Carousel';
 import Footer from '@components/footer/Footer';
 import Map from '@components/map/map';
+import FeedCard from '@components/feed-card/FeedCard';
+
 
 const imgArray = [
   'https://www.worldtrips.com/-/media/Project/TMHCC-MIS/HCCMISdotcom/Blog-Posts/travel/backpacker-wading-through-a-river-with-his-packjpg.jpg',
@@ -34,6 +36,9 @@ const Home = () => {
         ))}
       </div>
       <CountDown eventStartDate="2022-08-27T18:29:29.940Z" />
+      <div className="flex w-full h-auto">
+        <FeedCard img="https://cdn.pixabay.com/photo/2022/03/20/15/40/nature-7081138__340.jpg" />
+      </div>
       <Map />
       <Footer />
     </div>
