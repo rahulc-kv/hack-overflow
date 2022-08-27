@@ -1,7 +1,12 @@
 import { ExploreIcon, FeedIcon, SavedIcon, UserIcon } from '@assets/icons';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const handleNavigate = location => {
+    navigate('/' + location);
+  };
   return (
     <>
       <div className=" fixed bottom-0 w-full dark:border-gray-700">
@@ -19,7 +24,9 @@ const Footer = () => {
               <FeedIcon fill="#AEAEAE" className="w-5 h-5" />
             </div>
           </button>
-          <button className="w-1/4 h-12 text-sm font-bold text-white  bg-white   outline-none ">
+          <button
+            className="w-1/4 h-12 text-sm font-bold text-white  bg-white   outline-none "
+            onClick={()=>handleNavigate('explore')}>
             <div className="flex gap-x-1 justify-center items-center">
               <ExploreIcon fill="#AEAEAE" className="w-5 h-5" />
             </div>
