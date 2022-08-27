@@ -8,11 +8,11 @@ import Slider from 'Slider/Slider';
 
 const Home = () => {
   return (
-    <div className="w-full h-full bg-white">
+    <div className="w-full bg-white">
       <Carousel />
 
       <Slider />
-      <div className="flex w-full h-auto">
+      <div className="flex mb-5 w-full h-auto">
         <FeedCard img="https://cdn.pixabay.com/photo/2022/03/20/15/40/nature-7081138__340.jpg" />
       </div>
       <Footer />

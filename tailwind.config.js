@@ -43,7 +43,8 @@ module.exports = {
         'zoom-to-back': 'zoom-out 0.7s ease-in-out forwards',
         rotate: 'rotation 2s infinite',
         'loading-ellipsis': 'ellipsis steps(4,end) 900ms infinite',
-        'slide-infinite': 'slide-back-and-forth 1.5s ease-out infinite'
+        'slide-infinite': 'slide-back-and-forth 1.5s ease-out infinite',
+        'opacity-anim': 'opacity-animate 1s infinite',
       },
       keyframes: {
         'slide-left': {
@@ -104,6 +105,17 @@ module.exports = {
         ellipsis: {
           to: {
             width: '1.25rem'
+          }
+        },
+        'opacity-animate': {
+          '0%': {
+            opacity: 0.4
+          },
+          '50%': {
+            opacity: 0.6
+          },
+          '100%': {
+            opacity: 1
           }
         }
       },
