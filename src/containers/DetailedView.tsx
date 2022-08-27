@@ -19,17 +19,19 @@ const DetailedView: React.FC<DetailsProps> = ({
   imgUrl = img,
   description = desc,
   title = evtName,
-  author =  by,
+  author = by,
   netVotes = count
 }) => {
   return (
     <div className='h-full bg-white'>
       <div className='h-16 bg-green-300'>Dummy Header</div>
       <div className='relative'>
-        <div className='absolute p-2 bg-white left-2 top-2 w-8 h-8 rounded-full text-xl' role='presentation' onClick={() => history.back()} >
+        <div className='absolute top-2 left-2 p-2 w-8 h-8 text-xl bg-white rounded-full'
+          role='presentation'
+          onClick={() => history.back()} >
           <BackIcon />
         </div>
-        <div className='absolute p-2 bg-white right-2 top-2 w-8 h-8 rounded-full text-xl'>
+        <div className='absolute top-2 right-2 p-2 w-8 h-8 text-xl bg-white rounded-full'>
           <HeartIcon />
         </div>
         <img src={imgUrl} className='w-full'></img>
@@ -43,7 +45,7 @@ const DetailedView: React.FC<DetailsProps> = ({
               <span className='underline'>{author}</span>
             </div>
           </div>
-          <div className='flex my-auto gap-2'>
+          <div className='flex gap-2 my-auto'>
             <UpvoteIcon />
             <div >
               {netVotes}
@@ -55,7 +57,7 @@ const DetailedView: React.FC<DetailsProps> = ({
         <div className='flex justify-between mt-4'>
           <div className='text-left'>
             <div className='flex'>
-              <LocationIcon2 className='w-3 h-3 my-auto mr-1' />
+              <LocationIcon2 className='my-auto mr-1 w-3 h-3' />
               <div>
                 Woot Gaming,
                 Kochi
@@ -65,18 +67,18 @@ const DetailedView: React.FC<DetailsProps> = ({
           </div>
         </div>
       </div>
-      <div className='flex gap-2 w-full justify-around'>
-        <div className='w-[46%] p-3 flex gap-2 justify-center bg-black rounded-xl'>
-          <div className='w-3 my-auto'>
+      <div className='flex gap-2 justify-around w-full'>
+        <div className='flex gap-2 justify-center p-3 w-[46%] bg-black rounded-xl'>
+          <div className='my-auto w-3'>
             <ShareIcon fill='white'></ShareIcon>
           </div>
           <div className='text-white'>
             Share
           </div>
         </div>
-        <div className='w-[46%] p-3 flex gap-2 justify-center bg-white border rounded-xl'>
-          <div className='w-3 my-auto'>
-            <ShowMap stroke-width='2px' stroke='black'/>
+        <div className='flex gap-2 justify-center p-3 w-[46%] bg-white rounded-xl border'>
+          <div className='my-auto w-3'>
+            <ShowMap stroke-width='2px' stroke='black' />
           </div>
           <div className='text-black'>
             View On Map
