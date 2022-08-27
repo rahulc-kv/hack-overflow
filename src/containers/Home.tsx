@@ -2,6 +2,7 @@
 import React from 'react';
 
 import Carousel from '@components/carousel/Carousel';
+import Footer from '@components/footer/Footer';
 import Map from '@components/map/map';
 
 const Home = () => {
@@ -11,6 +12,7 @@ const Home = () => {
       <Carousel />
       <div className="flex overflow-auto flex-row m-3 customTransparentScroll"></div>
       <Map />
+      <Footer />
     </div>
   );
 };
