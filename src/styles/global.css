@@ -45,7 +45,7 @@ textarea:focus ~ .textarea-custom-label {
 
 .customNormalScroll {
   scrollbar-width: thin;
-  scrollbar-color: #5E7799;
+  scrollbar-color: #5e7799;
 }
 
 /* Chrome, Edge, and Safari */
@@ -80,10 +80,10 @@ textarea:focus ~ .textarea-custom-label {
 }
 
 /* to remove the up and down arrow of number input field */
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .marker {
@@ -104,14 +104,81 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 6px !important;
   cursor: pointer;
 }
-.event-title{
+.event-title {
   color: rebeccapurple;
   font-size: 16px;
   font-weight: 800;
   margin-bottom: 10px;
 }
-.mapboxgl-popup-close-button{
+.mapboxgl-popup-close-button {
   padding: 8px;
   outline: none;
   visibility: hidden;
+}
+.swiper-button-prev {
+  /* color: black; */
+  /* background-color: whitesmoke; */
+  /* border-radius: 50%; */
+  height: 15px !important;
+  /* overflow: hidden; */
+  width: 15px !important;
+  /* opacity: 0.6;  */
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-left: 10px;
+  opacity: 1;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  cursor: pointer;
+}
+.swiper-button-next {
+  /* color: black; */
+  /* background-color: whitesmoke; */
+  /* border-radius: 50%; */
+  height: 15px !important;
+  /* overflow: hidden; */
+  width: 15px !important;
+  /* opacity: 0.6;  */
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  margin-right: 10px;
+  opacity: 1;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  cursor: pointer;
+}
+.swiper-button-next:hover {
+  opacity: 1;
+}
+.swiper-button-next::after {
+  color: black;
+  visibility: hidden;
+  /* height: 15px; */
+  /* width: 15px; */
+  /* background-color: whitesmoke;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px; */
+}
+.swiper-button-prev::after {
+  color: black;
+  visibility: hidden;
+  /* height: 15px; */
+  /* width: 15px; */
+  /* background-color: whitesmoke;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px; */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important;
+}
+.swiper-pagination-bullet {
+  background-color: white !important;
+  opacity: 0.7;
 }
