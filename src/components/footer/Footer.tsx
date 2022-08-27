@@ -16,7 +16,7 @@ const Footer = () => {
   
   return (
     <>
-      <div className=" fixed bottom-0 mt-10 w-full dark:border-gray-700">
+      <div className=" fixed bottom-0 mt-10 w-full dark:border-gray-700 z-10">
         <div className="flex flex-col w-full h-12 "></div>
         <footer
           className="fixed
@@ -25,7 +25,7 @@ const Footer = () => {
             ">
           <button
             className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
-           outline-none shadow-sm ${buttonId == '/home' ? ('bg-blue-50') : ('bg-white')}`}>
+           outline-none shadow-sm ${buttonId == '/home' ? ('bg-blue-50') : ('bg-white')}`} onClick={() => handleNavigate('home')}>
             <div className="flex gap-x-1 justify-center items-center">
               <FeedIcon onClick={() => handleNavigate('home')}
                 fill={`  ${buttonId == '/home' ? ('#0000FF') : ('#AEAEAE')}`}

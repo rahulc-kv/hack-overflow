@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+import CountDown from '@components/count-down/CountDown';
 import React from 'react';
 
 const EventCard = ({ event }) => {
@@ -23,6 +24,7 @@ const EventCard = ({ event }) => {
         <div className="mt-1 text-sm font-normal leading-5 text-gray-500 capitalize">
           {event?.desc}
         </div>
+        <CountDown eventStartDate="2022-08-27T18:29:29.940Z" />
       </div>
     </div>
   );
