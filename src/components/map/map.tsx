@@ -28,7 +28,7 @@ const Map = () => {
       style: 'mapbox://styles/mapbox/outdoors-v11',
       center: [76.34127822976814, 10.016287638341907],
       // center: [-150.4048, 63.1224],
-      zoom: 6,
+      zoom: 9,
       projection: { name: 'globe' }
     });
 
@@ -114,10 +114,9 @@ const Map = () => {
   };
 
   return (
-    <div>
-      Map
-      <div ref={mapContainer} className="h-[600px]" />
-    </div>
+    
+      <div ref={mapContainer} className="h-screen" />
+
   );
 };
 

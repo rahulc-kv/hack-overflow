@@ -19,6 +19,7 @@ const PrivateLayout = () => {
             />
             <Route path="/explore" element={<Explore />} />
             <Route path="/saved" element={<Home />} />
+            <Route path="/user" element={<Home />} />
             <Route path="/profile" element={<Home />} />
           </>
         </Routes>

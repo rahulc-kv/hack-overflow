@@ -98,6 +98,9 @@ import { ReactComponent as UserIcon } from './user.svg';
 import { ReactComponent as FeedIcon } from './feed.svg';
 import { ReactComponent as SavedIcon } from './saved.svg';
 import { ReactComponent as ExploreIcon } from './explore.svg';
+import {ReactComponent as LocationIcon} from './location.svg';
+import {ReactComponent as ListIcon} from './list.svg';
+import {ReactComponent as FilterIcon} from './filter.svg';
 
 export {
   AmericanExpressLogo,
@@ -199,5 +202,8 @@ export {
   ZebPaySmallIcon,
   FeedIcon,
   SavedIcon,
-  ExploreIcon
+  ExploreIcon,
+  LocationIcon,
+  ListIcon,
+  FilterIcon
 };

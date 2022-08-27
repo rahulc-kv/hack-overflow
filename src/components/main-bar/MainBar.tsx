@@ -1,34 +1,44 @@
-import React, { FC, useState } from 'react';
+import React, {  useState } from 'react';
 
-import { SearchIcon, UserIcon } from '@assets/icons';
+import { FilterIcon, ListIcon, LocationIcon, SearchIcon } from '@assets/icons';
 
-const MainBar: FC = () => {
+const MainBar = ({list,setList}) => {
   const [showSearch, setShowSearch] = useState(false);
 
   const handleSearchClick = () => {
     setShowSearch(true);
   };
 
+  const handleToggle =()=>{
+    setList(!list);
+  };
+
   return (
     <div
-      className="flex sticky top-0 z-50 flex-row justify-end py-2 px-4 pt-4
-     w-full font-inter bg-white border-b-[1px] border-[#E5E7EB] sm:px-8">
-      <div className="flex flex-row py-1 px-2 bg-gray-100 rounded-2xl">
+      className="flex relative top-0 z-50  px-4 pt-3 pb-2
+       w-full h-14 font-inter bg-white border-b-[1px] border-[#E5E7EB] ">
+      <div className="flex absolute left-4 flex-row py-1 px-2 bg-gray-100 rounded-lg">
+        <SearchIcon
+          onClick={handleSearchClick}
+          className="mt-1 h-[17px]"
+        />
         {showSearch && (
           <form>
             <input
               type="text"
               placeholder="Search"
-              className="w-[80px] text-sm  bg-gray-100 outline-none md:w-[100px]"></input>
+              className="pl-2 w-[70px] text-sm  bg-gray-100 outline-none md:w-[100px]"></input>
           </form>
         )}
-        <SearchIcon
-          onClick={handleSearchClick}
-          className="mt-1 w-[17px] h-[17px] "
-        />
-      </div>
+        </div>
+        <div className="flex absolute right-4 flex-row">
+          {list?
+        (<div><ListIcon onClick={handleToggle} fill="#AEAEAE" className="mt-2 mr-4 h-[17px]" /> </div>):
+        (<div><LocationIcon onClick={handleToggle} fill="#AEAEAE" className="mt-2 mr-4 h-[17px]" /> </div>)
+          }
+        <div><FilterIcon fill="#AEAEAE" className="mt-2 h-[17px]" /></div>
+        </div>
 
-      <UserIcon fill="#989898" className="mt-2 ml-4 w-4 h-4"></UserIcon>
     </div>
   );
 };

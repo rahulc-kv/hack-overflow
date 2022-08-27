@@ -5,7 +5,6 @@ import React from 'react';
 
 import Carousel from '@components/carousel/Carousel';
 import Footer from '@components/footer/Footer';
-import Map from '@components/map/map';
 import FeedCard from '@components/feed-card/FeedCard';
 
 
@@ -39,7 +38,6 @@ const Home = () => {
       <div className="flex w-full h-auto">
         <FeedCard img="https://cdn.pixabay.com/photo/2022/03/20/15/40/nature-7081138__340.jpg" />
       </div>
-      <Map />
       <Footer />
     </div>
   );
