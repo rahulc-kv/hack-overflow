@@ -1,7 +1,9 @@
 /* eslint-disable max-len */
 import EventCard from '@components/EventCard/EventCard';
 import Footer from '@components/footer/Footer';
-import React from 'react';
+import MainBar from '@components/main-bar/MainBar';
+import React, { useState } from 'react';
+import Map from '@components/map/map';
 
 const eventList = [
   {
@@ -30,12 +32,27 @@ const eventList = [
   }
 ];
 const Explore = () => {
+
+  const [list, setList] = useState(false);
+
   return (
     <>
-      <div className="mx-8 mb-20 h-full max-h-screen">
-        {eventList.map((event, index) => (
-          <EventCard key={index} event={event} />
-        ))}
+      <div className=" h-full max-h-screen">
+        <MainBar list={list} setList={setList} />
+        {list ?
+          (
+            <Map />
+           
+          ) :
+          (<div className="mx-8 mt-4 mb-20">
+
+            {eventList.map((event, index) => (
+              <EventCard key={index} event={event} />
+            ))}
+
+          </div>)
+        }
+
       </div>
       <Footer />
     </>

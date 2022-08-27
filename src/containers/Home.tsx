@@ -4,7 +4,6 @@ import React from 'react';
 
 import Carousel from '@components/carousel/Carousel';
 import Footer from '@components/footer/Footer';
-import Map from '@components/map/map';
 
 const imgArray = [
   'https://www.worldtrips.com/-/media/Project/TMHCC-MIS/HCCMISdotcom/Blog-Posts/travel/backpacker-wading-through-a-river-with-his-packjpg.jpg',
@@ -32,7 +31,6 @@ const Home = () => {
           </div>
         ))}
       </div>
-      <Map />
       <Footer />
     </div>
   );

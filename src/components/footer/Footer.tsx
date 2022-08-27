@@ -1,12 +1,19 @@
 import { ExploreIcon, FeedIcon, SavedIcon, UserIcon } from '@assets/icons';
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
   const navigate = useNavigate();
-  const handleNavigate = location => {
-    navigate('/' + location);
+
+  const location = useLocation();
+  
+  const [buttonId, setButtonId] = useState(location.pathname);
+  
+  const handleNavigate = loc => {
+    navigate('/' + loc);
+    setButtonId('/' + loc);
   };
+  
   return (
     <>
       <div className=" fixed bottom-0 w-full dark:border-gray-700">
@@ -18,27 +25,35 @@ const Footer = () => {
              text-white
             ">
           <button
-            className="w-1/4 h-12 text-sm font-bold text-white  bg-white 
-           outline-none shadow-sm">
+            className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
+           outline-none shadow-sm ${buttonId == '/home' ? ('bg-blue-50') : ('bg-white')}`}>
             <div className="flex gap-x-1 justify-center items-center">
-              <FeedIcon fill="#AEAEAE" className="w-5 h-5" />
+              <FeedIcon onClick={() => handleNavigate('home')}
+                fill={`  ${buttonId == '/home' ? ('#0000FF') : ('#AEAEAE')}`}
+                className="w-5 h-5 " />
             </div>
           </button>
           <button
-            className="w-1/4 h-12 text-sm font-bold text-white  bg-white   outline-none "
-            onClick={()=>handleNavigate('explore')}>
+            className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
+            outline-none shadow-sm ${buttonId == '/explore' ? ('bg-blue-50') : ('bg-white')}`}
+            onClick={() => handleNavigate('explore')}>
             <div className="flex gap-x-1 justify-center items-center">
-              <ExploreIcon fill="#AEAEAE" className="w-5 h-5" />
+              <ExploreIcon fill={` ${buttonId == '/explore' ? ('#0000FF') : ('#AEAEAE')}`} className="w-5 h-5" />
             </div>
           </button>
-          <button className="w-1/4 h-12 text-sm font-bold text-white  bg-white  outline-none ">
+          <button
+            className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
+            outline-none shadow-sm ${buttonId == '/saved' ? ('bg-blue-50') : ('bg-white')}`}>
             <div className="flex gap-x-1 justify-center items-center">
-              <SavedIcon fill="#AEAEAE" className="w-5 h-5" />
+              <SavedIcon onClick={() => handleNavigate('saved')}
+                fill={` ${buttonId == '/saved' ? ('#0000FF') : ('#AEAEAE')}`} className="w-5 h-5" />
             </div>
           </button>
-          <button className="w-1/4 h-12 text-sm font-bold text-white  bg-white   outline-none ">
+          <button className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
+            outline-none shadow-sm ${buttonId == '/user' ? ('bg-blue-50') : ('bg-white')}`}>
             <div className="flex gap-x-1 justify-center items-center">
-              <UserIcon fill="#AEAEAE" className="w-5 h-5" />
+              <UserIcon onClick={() => handleNavigate('user')} 
+              fill={` ${buttonId == '/user' ? ('#0000FF') : ('#AEAEAE')}`} className="w-5 h-5" />
             </div>
           </button>
         </footer>
