@@ -1,6 +1,7 @@
 import { ReactComponent as AmericanExpressLogo } from './americanExpress.svg';
 import { ReactComponent as AttachmentIcon } from './attachmentIcon.svg';
 import { ReactComponent as BankIcon } from './bankIcon.svg';
+import { ReactComponent as BackIcon } from './back.svg';
 import { ReactComponent as BetaLogo } from './betaLogo.svg';
 import { ReactComponent as BetaLogoVertical } from './betaLogoVertical.svg';
 import { ReactComponent as BinanceIcon } from './binanceIcon.svg';
@@ -51,6 +52,7 @@ import { ReactComponent as GreenLoadingIcon } from './greenLoadingIcon.svg';
 import { ReactComponent as GreenTickCircle } from './greenTickCircle.svg';
 import { ReactComponent as GreenTickFillIcon } from './greenTickFillIcon.svg';
 import { ReactComponent as HamburgerMenu } from './hamburgerMenu.svg';
+import { ReactComponent as HeartIcon } from './heart.svg';
 import { ReactComponent as HomeIcon } from './homeIcon.svg';
 import { ReactComponent as IndianFlag } from './indianFlag.svg';
 import { ReactComponent as InfoIcon } from './infoIcon.svg';
@@ -58,6 +60,7 @@ import { ReactComponent as InfoIconGrey } from './infoIconGrey.svg';
 import { ReactComponent as JcbLogo } from './jcbLogo.svg';
 import { ReactComponent as LeftArrow } from './leftArrow.svg';
 import { ReactComponent as LinkIcon } from './linkIcon.svg';
+import { ReactComponent as LocationIcon } from './location.svg';
 import { ReactComponent as MailIcon } from './mail.svg';
 import { ReactComponent as MastercardLogo } from './mastercardLogo.svg';
 import { ReactComponent as OtherPaymentLogo } from './otherPaymentLogo.svg';
@@ -77,6 +80,7 @@ import { ReactComponent as SearchIcon } from './searchIcon.svg';
 import { ReactComponent as SellIcon } from './sellIcon.svg';
 import { ReactComponent as SentEmailIcon } from './sentEmailIcon.svg';
 import { ReactComponent as SettingsIcon } from './setting.svg';
+import { ReactComponent as ShareIcon } from './share.svg';
 import { ReactComponent as SourcesIcon } from './sourcesIcon.svg';
 import { ReactComponent as SupportIcon } from './supportIcon.svg';
 import { ReactComponent as TradeIcon } from './tradeIcon.svg';
@@ -94,11 +98,14 @@ import { ReactComponent as WhiteEditIcon } from './whiteEditIcon.svg';
 import { ReactComponent as WithdrawalIcon } from './withdrawalIcon.svg';
 import { ReactComponent as ZebPayIcon } from './zebPayIcon.svg';
 import { ReactComponent as ZebPaySmallIcon } from './zebPaySmallIcon.svg';
+import { ReactComponent as UpvoteIcon } from './upvote.svg';
+import { ReactComponent as DownVoteIcon } from './downvote.svg';
+import { ReactComponent as ShowMap } from './showMap.svg';
 import { ReactComponent as UserIcon } from './user.svg';
 import { ReactComponent as FeedIcon } from './feed.svg';
 import { ReactComponent as SavedIcon } from './saved.svg';
 import { ReactComponent as ExploreIcon } from './explore.svg';
-import {ReactComponent as LocationIcon} from './location.svg';
+import {ReactComponent as LocationIcon2} from './location2.svg';
 import {ReactComponent as ListIcon} from './list.svg';
 import {ReactComponent as FilterIcon} from './filter.svg';
 import {ReactComponent as LikedIcon} from './liked.svg';
@@ -107,6 +114,7 @@ export {
   AmericanExpressLogo,
   AttachmentIcon,
   BankIcon,
+  BackIcon,
   BetaLogo,
   BetaLogoVertical,
   BinanceIcon,
@@ -157,6 +165,7 @@ export {
   GreenTickCircle,
   GreenTickFillIcon,
   HamburgerMenu,
+  HeartIcon,
   HomeIcon,
   IndianFlag,
   InfoIcon,
@@ -164,6 +173,7 @@ export {
   JcbLogo,
   LeftArrow,
   LinkIcon,
+  LocationIcon,
   MailIcon,
   MastercardLogo,
   OtherPaymentLogo,
@@ -183,6 +193,7 @@ export {
   SellIcon,
   SentEmailIcon,
   SettingsIcon,
+  ShareIcon,
   SourcesIcon,
   SupportIcon,
   TradeIcon,
@@ -201,10 +212,13 @@ export {
   WithdrawalIcon,
   ZebPayIcon,
   ZebPaySmallIcon,
+  UpvoteIcon,
+  DownVoteIcon,
+  ShowMap,
   FeedIcon,
   SavedIcon,
   ExploreIcon,
-  LocationIcon,
+  LocationIcon2,
   ListIcon,
   FilterIcon,
   LikedIcon
