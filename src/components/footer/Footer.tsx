@@ -16,13 +16,12 @@ const Footer = () => {
   
   return (
     <>
-      <div className=" fixed bottom-0 w-full dark:border-gray-700">
+      <div className=" fixed bottom-0 mt-10 w-full dark:border-gray-700">
         <div className="flex flex-col w-full h-12 "></div>
         <footer
           className="fixed
              inset-x-0 bottom-0 
              text-3xl 
-             text-white
             ">
           <button
             className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
