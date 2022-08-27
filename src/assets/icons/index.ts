@@ -79,8 +79,6 @@ import { ReactComponent as SentEmailIcon } from './sentEmailIcon.svg';
 import { ReactComponent as SettingsIcon } from './setting.svg';
 import { ReactComponent as SourcesIcon } from './sourcesIcon.svg';
 import { ReactComponent as SupportIcon } from './supportIcon.svg';
-import { ReactComponent as TaxcrypLogo } from './taxcrypLogo.svg';
-import { ReactComponent as TaxcrypLogoSmall } from './taxcrypLogoSmall.svg';
 import { ReactComponent as TradeIcon } from './tradeIcon.svg';
 import { ReactComponent as TransactionsIcon } from './transactionsIcon.svg';
 import { ReactComponent as TransferIcon } from './transferIcon.svg';
@@ -179,8 +177,6 @@ export {
   SettingsIcon,
   SourcesIcon,
   SupportIcon,
-  TaxcrypLogo,
-  TaxcrypLogoSmall,
   TradeIcon,
   TransactionsIcon,
   TransferIcon,
