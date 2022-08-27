@@ -1,4 +1,4 @@
-# taxcryp-ui
+# hack-overflow
 
 Web application that helps in crypto taxation
 
@@ -19,7 +19,7 @@ To start developing this UI you there are some prerequisites:
 To develop/run the ui locally execute the following steps:
 
 1. Install the prereqs mentioned above.
-2. Check out the project from Github [taxcryp-ui](https://github.com/Taxcryp-com/taxcryp-ui)
+2. Check out the project from Github [hackoverflow](https://github.com/rahulc-kv/hack-overflow.git)
 3. Run `yarn install`
 4. To run the local server (in dev mode) run `yarn dev` or `yarn run dev`
 
@@ -58,7 +58,7 @@ Deployment can be done as a Web App.
 
 ### Folder Structure
 
-taxcryp-ui/
+hack-overflow/
   |-src/
     |-assets/
     |-components/
@@ -101,16 +101,3 @@ taxcryp-ui/
 
 - Follow aliasing for using folders in `src` add the alias in the `tsconfig.paths.json` accordingly.
 
-### GIT Branching
-
-We will have a development brach(`dev`). For normal development and bug-fix flow, create branch from `dev`.
-
-- feature branch naming convention
-
-The branch name for a `feature` should be in the format `f-<#JIRA-ticket-id>-<short description>`, for example `f-TAX-3-addExchange`.
-
-The branch name for a `bugfix` should be in the format `fix-<#JIRA-ticket-id>-<short description>`, for example `fix-TAX-83-styleFix`.
-
-The JIRA-ticket-id is from the pivotal tracker.
-​
-For GIT commit messages - https://chris.beams.io/posts/git-commit/#imperative

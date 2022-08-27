@@ -191,7 +191,7 @@
     "lastSyncTime": "Last Sync: {{syncTime}}",
     "fileUploadedTime": "File Uploaded: {{uploadedTime}}",
     "fileImportTitle": "Let's get your File imported!",
-    "fileImportSubTitile": "Let's upload your files so we can automatically convert and import your data into the TaxCryp tax engine.",
+    "fileImportSubTitile": "Let's upload your files so we can automatically convert and import your data into the Hackoverflow tax engine.",
     "uploadFile": "Upload File",
     "linkedViaAPI": "Linked via API",
     "uploadGenericFile": "Upload  a generic File",
@@ -207,12 +207,12 @@
     "importFromExchnageFile": "How to import transactions from {{exchange}}",
     "multipleSources": "Multiple sources",
     "dropFile": "Drop or <span style='color:{{color}};'> Browse </span> your file",
-    "authConnectSubText": "Automate syncing transactions between Taxcryp and your exchange!\nBy signing in you authorise Taxcryp to securely integrate your transaction data and calculate taxes.\nOnce you link your account, all your transactions will seamlessly show up on Taxcryp, and there is no need to sync your transactions manually.",
+    "authConnectSubText": "Automate syncing transactions between Hackoverflow and your exchange!\nBy signing in you authorise Hackoverflow to securely integrate your transaction data and calculate taxes.\nOnce you link your account, all your transactions will seamlessly show up on Hackoverflow, and there is no need to sync your transactions manually.",
     "connectExchange": "Connect Exchange",
     "loginExpired": "Login Expired",
     "weAreAlmostDone": "We're almost Done",
-    "fetchingDataToTaxCryp":"We are fetching your data into your TaxCryp account!",
-    "fetchingDataFromExchangeToTaxCryp":"We are fetching your data from {{exchangeName}} to your TaxCryp account!",
+    "fetchingDataToHackoverflow":"We are fetching your data into your Hackoverflow account!",
+    "fetchingDataFromExchangeToHackoverflow":"We are fetching your data from {{exchangeName}} to your Hackoverflow account!",
     "uploadGenericCsv":"Upload Generic CSV"
   },
   "popup": {
@@ -230,7 +230,7 @@
     "lastName": "Last Name",
     "signUp": "Sign Up",
     "alreadyHaveAccount": "Already have an account?",
-    "signUpMessage": "By signing up, you’re agreeing with Taxcryp’s",
+    "signUpMessage": "By signing up, you’re agreeing with Hackoverflow’s",
     "t&c": "Terms and Conditions and Privacy Policy.",
     "invalidFormat": "Invalid Format",
     "whiteSpaceValidation": "This field cannot contain whitespaces",
@@ -288,7 +288,7 @@
     "copied": "copied!"
   },
   "subscription": {
-    "flexiblePricing": "TaxCryp Inaugural Launch Plans - Limited Time Offer",
+    "flexiblePricing": "Hackoverflow Inaugural Launch Plans - Limited Time Offer",
     "selectFinancialYear": "Select Financial Year",
     "subHeader": "All plans to provide a bundle of 3 Financial Years - 2020-21, 21-22 and 22-23",
     "perYear": "/ year",

@@ -271,7 +271,7 @@ export const TOKEN_EXPIRED_ERROR = {
   invalidLink: 'link has been expired'
 };
 
-export const SUPPORTEMAIL = 'support@taxcryp.com';
+export const SUPPORTEMAIL = 'support@hackoverflow.com';
 
 export const FIAT_CURRENCIES = [
   {
