@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React from 'react';
 
 import { RootState } from '@store/reducers';
@@ -44,7 +45,9 @@ const Slider = () => {
                             eventName: event.properties.title,
                             desc: event.properties.description,
                             imgSRC: event.properties.image,
-                            startsIn: event.properties.start_time
+                            startsIn: event.properties.start_time,
+                            eventId: event.properties.id
+
                           }}
                           showEventInDetail={false}
                         />

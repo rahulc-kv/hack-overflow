@@ -2,15 +2,19 @@
 import { LoveIcon } from '@assets/icons';
 import CountDown from '@components/count-down/CountDown';
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const EventCard = ({ event, showEventInDetail }) => {
   const imgStyle = 'rounded-lg ';
-
+  const navigate = useNavigate();
+  const handleEventClick = () => {
+    navigate('/event-details/' + event.eventId);
+  };
   return (
     <div
       className={`flex flex-col shadow-xl rounded-lg w-full  bg-white ${showEventInDetail ? 'mb-4' : 'mb-0 h-[236px]'}
         
-        `}>
+        `} role={'presentation'} onClick={() => handleEventClick()} >
       <div
         className={` relative flex items-start justify-center border-b-0 h-[200px] ${showEventInDetail ? 'w-full' : 'w-52 h-[140px]'} overflow-hidden rounded-b-none ${imgStyle}`}>
         <LoveIcon className='absolute top-2 right-3 z-10' />
@@ -30,7 +34,7 @@ const EventCard = ({ event, showEventInDetail }) => {
           </div>}
         <CountDown eventStartDate={event?.startsIn} />
       </div>
-    </div>
+    </div >
   );
 };
 export default EventCard;

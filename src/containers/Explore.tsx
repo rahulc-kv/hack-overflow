@@ -32,6 +32,7 @@ const Explore = () => {
                 event={{
                   eventName: event.properties.title,
                   desc: event.properties.description,
+                  eventId: event.properties.id,
                   imgSRC: event.properties.image,
                   startsIn: event.properties.start_time
                 }}

@@ -3,7 +3,7 @@ import CountDown from '@components/count-down/CountDown';
 import { BackIcon, DownVoteIcon, HeartIcon, LocationIcon2, ShareIcon, ShowMap, UpvoteIcon } from '@assets/icons';
 import { RootState } from '@store/reducers';
 import { useSelector } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import Footer from '@components/footer/Footer';
 import Header from '@components/header/Header';
 
@@ -36,6 +36,7 @@ const DetailedView: React.FC<DetailsProps> = ({
   const { events } = useSelector(
     (state: RootState) => state.rootReducer.eventsReducer
   );
+  const navigate = useNavigate();
 
   useEffect(() => {
     const e = events.find((item) => item.properties.id == id)?.properties || {};
@@ -48,13 +49,13 @@ const DetailedView: React.FC<DetailsProps> = ({
       <div className='relative'>
         <div className='absolute top-2 left-2 p-2 w-8 h-8 text-xl bg-white rounded-full'
           role='presentation'
-          onClick={() => window.location.href = '/#/explore'} >
+          onClick={() => navigate(-1)} >
           <BackIcon />
         </div>
         <div className='absolute top-2 right-2 p-2 w-8 h-8 text-xl bg-white rounded-full'>
           <HeartIcon />
         </div>
-        <img src={event?.image || imgUrl} className='w-full'></img>
+        <img src={event?.image || imgUrl} className='w-full h-[350px]'></img>
       </div>
       <div className='p-4 font-inter'>
         <div className='flex justify-between'>
@@ -66,13 +67,13 @@ const DetailedView: React.FC<DetailsProps> = ({
             </div>
           </div>
           {/* <div> */}
-            <div className='flex gap-2 justify-center my-auto'>
-              <UpvoteIcon />
-              <div>
-                {netVotes}
-              </div>
-              <DownVoteIcon />
+          <div className='flex gap-2 justify-center my-auto'>
+            <UpvoteIcon />
+            <div>
+              {netVotes}
             </div>
+            <DownVoteIcon />
+          </div>
           {/* </div> */}
 
         </div>
@@ -85,12 +86,12 @@ const DetailedView: React.FC<DetailsProps> = ({
               </div>
             </div>
           </div>
-            <div className='flex justify-between'>
-              <div className='mt-2 p-1'><CountDown eventStartDate={event?.start_time || time} /></div>
-              <div className='flex justify-center gap-2 my-auto'>
-                <div className='mt-1 text-xs text-center'>Saved by 9 people</div>
-              </div>
+          <div className='flex justify-between'>
+            <div className='mt-2 p-1'><CountDown eventStartDate={event?.start_time || time} /></div>
+            <div className='flex justify-center gap-2 my-auto'>
+              <div className='mt-1 text-xs text-center'>Saved by 9 people</div>
             </div>
+          </div>
         </div>
       </div>
       <div className='flex gap-1 justify-around w-full'>
