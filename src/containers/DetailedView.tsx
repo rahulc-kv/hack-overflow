@@ -1,5 +1,6 @@
 import React from 'react';
 import { BackIcon, DownVoteIcon, HeartIcon, LocationIcon2, ShareIcon, ShowMap, UpvoteIcon } from '@assets/icons';
+import Header from '@components/header/Header';
 
 const img = 'https://moneyinc.com/wp-content/uploads/2016/05/eSports-750x500.jpg';
 const desc = 'Description DescriptionDescriptionDescrip tionDescript ionDescription DescriptionD escriptionDescription';
@@ -24,7 +25,7 @@ const DetailedView: React.FC<DetailsProps> = ({
 }) => {
   return (
     <div className='h-full bg-white'>
-      <div className='h-16 bg-green-300'>Dummy Header</div>
+      <Header />
       <div className='relative'>
         <div className='absolute top-2 left-2 p-2 w-8 h-8 text-xl bg-white rounded-full'
           role='presentation'
@@ -77,7 +78,7 @@ const DetailedView: React.FC<DetailsProps> = ({
           </div>
         </div>
         <div className='flex gap-2 justify-center p-3 w-[46%] bg-white rounded-xl border'>
-          <div className='my-auto w-3'>
+          <div className='my-auto w-4'>
             <ShowMap stroke-width='2px' stroke='black' />
           </div>
           <div className='text-black'>

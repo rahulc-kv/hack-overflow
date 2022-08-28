@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LocationIcon, SettingsIcon } from '@assets/icons';
+import { LocationIcon2, SettingsIcon } from '@assets/icons';
 const Header = () => {
 
     return (
@@ -9,7 +9,7 @@ const Header = () => {
        w-full h-14 font-inter bg-white border-b-[1px] border-[#E5E7EB] ">
             <div className="flex absolute left-4 flex-row">
                 <div className=" p-1 h-9 bg-gray-100 rounded-lg">
-                    <LocationIcon
+                    <LocationIcon2
                         className="mt-1 h-[19px]"
                     />
                 </div>
