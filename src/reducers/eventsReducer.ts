@@ -367,6 +367,21 @@ const initialState = {
         category: 4
       }
     },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [76.3019, 9.9921]
+      },
+      properties: {
+        id: '27',
+        title: 'E-Sports 2K22',
+        location: 'Woot Gaming, Kochi',
+        description: 'An ultimate football gaming festival, brought to you by Underdog Gamers. Tired of winning against the same friends again and again? It’s time to step out from your neighbourhood ground and come see where you stand in the battle among the best of the best. Learn, adapt, and improvise on the ground. Get real with your love for the game, ride the adrenaline rush, and show off your skills in the ultimate football tournament.',
+        image: '/images/eSports.webp',
+        start_time: '2022-08-28T18:29:29.940Z'
+      }
+    }
   ],
   categories: [{
     id: 1,

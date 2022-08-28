@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import CountDown from '@components/count-down/CountDown';
 import { BackIcon, DownVoteIcon, HeartIcon, LocationIcon2, ShareIcon, ShowMap, UpvoteIcon } from '@assets/icons';
+import { RootState } from '@store/reducers';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import Footer from '@components/footer/Footer';
 import Header from '@components/header/Header';
 
-const img = 'https://moneyinc.com/wp-content/uploads/2016/05/eSports-750x500.jpg';
-const desc = 'Description DescriptionDescriptionDescrip tionDescript ionDescription DescriptionD escriptionDescription';
+const img = '/images/eSports.webp';
+const desc = 'Explore this awesome event nearby.';
 const evtName = 'E-Sports 2k22';
 const by = 'Shamlikhan CP';
 const count = '12';
+const dateTime = '2022-08-28T18:29:29.940Z';
 
 type DetailsProps = {
   imgUrl?: string;
@@ -14,6 +20,7 @@ type DetailsProps = {
   description?: string;
   author?: string;
   netVotes?: number;
+  time?: string;
 };
 
 const DetailedView: React.FC<DetailsProps> = ({
@@ -21,54 +28,72 @@ const DetailedView: React.FC<DetailsProps> = ({
   description = desc,
   title = evtName,
   author = by,
-  netVotes = count
+  netVotes = count,
+  time = dateTime
 }) => {
+  const [event, setEvent] = useState<any>({});
+  const { id } = useParams();
+  const { events } = useSelector(
+    (state: RootState) => state.rootReducer.eventsReducer
+  );
+
+  useEffect(() => {
+    const e = events.find((item) => item.properties.id == id)?.properties || {};
+    setEvent(e);
+  }, []);
+
   return (
     <div className='h-full bg-white'>
       <Header />
       <div className='relative'>
         <div className='absolute top-2 left-2 p-2 w-8 h-8 text-xl bg-white rounded-full'
           role='presentation'
-          onClick={() => history.back()} >
+          onClick={() => window.location.href = '/#/explore'} >
           <BackIcon />
         </div>
         <div className='absolute top-2 right-2 p-2 w-8 h-8 text-xl bg-white rounded-full'>
           <HeartIcon />
         </div>
-        <img src={imgUrl} className='w-full'></img>
+        <img src={event?.image || imgUrl} className='w-full'></img>
       </div>
       <div className='p-4 font-inter'>
         <div className='flex justify-between'>
           <div className='flex flex-col'>
-            <h2 className='my-2 text-2xl'>{title}</h2>
+            <h2 className='my-2 text-2xl'>{event?.title || title}</h2>
             <div>
               <span>by </span>
               <span className='underline'>{author}</span>
             </div>
           </div>
-          <div className='flex gap-2 my-auto'>
-            <UpvoteIcon />
-            <div >
-              {netVotes}
+          {/* <div> */}
+            <div className='flex gap-2 justify-center my-auto'>
+              <UpvoteIcon />
+              <div>
+                {netVotes}
+              </div>
+              <DownVoteIcon />
             </div>
-            <DownVoteIcon />
-          </div>
+          {/* </div> */}
 
         </div>
-        <div className='flex justify-between mt-4'>
+        <div className='mt-4'>
           <div className='text-left'>
             <div className='flex'>
               <LocationIcon2 className='my-auto mr-1 w-3 h-3' />
               <div>
-                Woot Gaming,
-                Kochi
+                {event?.location || 'Kochi'}
               </div>
             </div>
-            <div className='mt-2'>Starts In: 24 mins</div>
           </div>
+            <div className='flex justify-between'>
+              <div className='mt-2 p-1'><CountDown eventStartDate={event?.start_time || time} /></div>
+              <div className='flex justify-center gap-2 my-auto'>
+                <div className='mt-1 text-xs text-center'>Saved by 9 people</div>
+              </div>
+            </div>
         </div>
       </div>
-      <div className='flex gap-2 justify-around w-full'>
+      <div className='flex gap-1 justify-around w-full'>
         <div className='flex gap-2 justify-center p-3 w-[46%] bg-black rounded-xl'>
           <div className='my-auto w-3'>
             <ShareIcon fill='white'></ShareIcon>
@@ -78,8 +103,8 @@ const DetailedView: React.FC<DetailsProps> = ({
           </div>
         </div>
         <div className='flex gap-2 justify-center p-3 w-[46%] bg-white rounded-xl border'>
-          <div className='my-auto w-4'>
-            <ShowMap stroke-width='2px' stroke='black' />
+          <div className='my-auto w-3'>
+            <ShowMap strokeWidth='2px' stroke='black' />
           </div>
           <div className='text-black'>
             View On Map
@@ -87,9 +112,10 @@ const DetailedView: React.FC<DetailsProps> = ({
         </div>
       </div>
       <div className='p-4 my-2'>
-        <h2 className=''>Description</h2>
-        <p className='my-2 text-sm'>{description}</p>
+        <h2 className=''>Overview</h2>
+        <p className='my-2 text-sm'>{event?.description || description}</p>
       </div>
+      <Footer />
     </div>
   );
 };
