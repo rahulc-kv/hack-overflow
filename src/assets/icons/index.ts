@@ -108,6 +108,7 @@ import { ReactComponent as ExploreIcon } from './explore.svg';
 import {ReactComponent as LocationIcon2} from './location2.svg';
 import {ReactComponent as ListIcon} from './list.svg';
 import {ReactComponent as FilterIcon} from './filter.svg';
+import {ReactComponent as LikedIcon} from './liked.svg';
 import {ReactComponent as LoveIcon} from './loveIcon.svg';
 
 
@@ -222,5 +223,6 @@ export {
   LocationIcon2,
   ListIcon,
   FilterIcon,
+  LikedIcon,
   LoveIcon
 };

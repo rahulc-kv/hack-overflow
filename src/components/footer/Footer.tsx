@@ -1,4 +1,5 @@
-import { ExploreIcon, FeedIcon, SavedIcon, UserIcon } from '@assets/icons';
+import { ExploreIcon, FeedIcon, PlusCircle,
+   SavedIcon, UserIcon } from '@assets/icons';
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -24,7 +25,7 @@ const Footer = () => {
              text-3xl 
             ">
           <button
-            className={`w-1/4 h-12 text-sm font-bold text-white  bg-slate-50 
+            className={`w-1/5 h-12 text-sm font-bold text-white  bg-slate 
            outline-none shadow-sm  `}
             onClick={() => handleNavigate('home')}
           >
@@ -35,7 +36,7 @@ const Footer = () => {
             </div>
           </button>
           <button
-            className={`w-1/4 h-12 text-sm font-bold text-white  bg-slate-50 
+            className={`w-1/5 h-12 text-sm font-bold text-white  bg-slate 
             outline-none shadow-sm `}
             onClick={() => handleNavigate('explore')}>
             <div className="flex gap-x-1 justify-center items-center">
@@ -43,14 +44,23 @@ const Footer = () => {
             </div>
           </button>
           <button
-            className={`w-1/4 h-12 text-sm font-bold text-white  bg-slate-50 
+            className={`w-1/5 h-12 text-sm font-bold text-white  bg-slate 
+            outline-none shadow-sm`}
+            onClick={() => handleNavigate('plus')}>
+            <div className="flex gap-x-1 justify-center items-center">
+              <PlusCircle
+               fill={` ${buttonId == '/plus' ? ('#000000') : ('#AEAEAE')}`} className="w-5 h-5" />
+            </div>
+          </button>
+          <button
+            className={`w-1/5 h-12 text-sm font-bold text-white  bg-slate 
             outline-none shadow-sm`}>
             <div className="flex gap-x-1 justify-center items-center">
               <SavedIcon onClick={() => handleNavigate('saved')}
                 fill={` ${buttonId == '/saved' ? ('#000000') : ('#AEAEAE')}`} className="w-5 h-5" />
             </div>
           </button>
-          <button className={`w-1/4 h-12 text-sm font-bold text-white  bg-slate-50 
+          <button className={`w-1/5 h-12 text-sm font-bold text-white  bg-slate 
             outline-none shadow-sm `}>
             <div className="flex gap-x-1 justify-center items-center">
               <UserIcon onClick={() => handleNavigate('user')}
