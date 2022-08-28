@@ -13,7 +13,7 @@ const EventCard = ({ event, showEventInDetail }) => {
         `}>
       <div
         className={` relative flex items-start justify-center border-b-0 h-[200px] ${showEventInDetail ? 'w-full' : 'w-52 h-[140px]'} overflow-hidden rounded-b-none ${imgStyle}`}>
-        <LoveIcon className='absolute top-2 right-3 z-20' />
+        <LoveIcon className='absolute top-2 right-3 z-10' />
         <img
           className="w-auto h-auto rounded rounded-b-none opacity-80"
           src={event?.imgSRC}

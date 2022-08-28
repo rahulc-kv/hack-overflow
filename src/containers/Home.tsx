@@ -14,7 +14,7 @@ const Home = () => {
     <Carousel />
       <Slider />
       <div className="flex mb-5 w-full h-auto">
-        <FeedCard img="https://cdn.pixabay.com/photo/2022/03/20/15/40/nature-7081138__340.jpg" />
+        <FeedCard img="/images/marathon.jpg" />
       </div>
       <Footer />
     </div>

@@ -6,6 +6,7 @@ import React, { useState } from 'react';
 import Map from '@components/map/map';
 import { useSelector } from 'react-redux';
 import { RootState } from '@store/reducers';
+import Header from '@components/header/Header';
 
 
 const Explore = () => {
@@ -18,6 +19,8 @@ const Explore = () => {
   return (
     <>
       <div className="w-full bg-white">
+        <Header />
+
         <MainBar list={list} setList={setList} />
         {list ? (
           <Map />
