@@ -30,26 +30,28 @@ const Slider = () => {
               {headerData.title}
             </div>
             <div className="flex overflow-auto flex-row mx-3 h-full customTransparentScroll">
-              {index == 0 ?
-                <div className='flex mr-4 h-[200px]'>
+              {index === 0 ?
+                (<div className='flex mr-4 h-[200px]'>
                   {categories.map(category => (
-                    <EventCategory category={category} key={category.id} />))}</div>
-                :
-                <>
-                  {events.map(event => (
-                    <div key={event.properties.id} className='mr-4 w-full h-full'>
-                      <EventCard
-                        event={{
-                          eventName: event.properties.title,
-                          desc: event.properties.description,
-                          imgSRC: event.properties.image,
-                          startsIn: event.properties.start_time
-                        }}
-                        showEventInDetail={false}
-                      />
-                    </div>
-                  ))}
-                </>}
+                    <EventCategory category={category} key={category.id} />))}
+                </div>
+                ) : (
+                  <>
+                    {events.map(event => (
+                      <div key={event.properties.id} className='mr-4 w-full h-full'>
+                        <EventCard
+                          event={{
+                            eventName: event.properties.title,
+                            desc: event.properties.description,
+                            imgSRC: event.properties.image,
+                            startsIn: event.properties.start_time
+                          }}
+                          showEventInDetail={false}
+                        />
+                      </div>
+                    ))}
+                  </>
+                )}
             </div>          </div>
         ))}
       </div>

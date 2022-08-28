@@ -3,7 +3,6 @@ import React from 'react';
 
 import Carousel from '@components/carousel/Carousel';
 import Footer from '@components/footer/Footer';
-import FeedCard from '@components/feed-card/FeedCard';
 import Slider from 'Slider/Slider';
 import Header from '@components/header/Header';
 
@@ -14,7 +13,6 @@ const Home = () => {
     <Carousel />
       <Slider />
       <div className="flex mb-5 w-full h-auto">
-        <FeedCard img="/images/marathon.jpg" />
       </div>
       <Footer />
     </div>

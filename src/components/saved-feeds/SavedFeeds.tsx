@@ -18,9 +18,11 @@ const SavedFeed = () => {
                 w-[180px] h-[180px] bg-white hover:bg-gray-100 rounded-md">
                         <img
                             className="w-[180px] h-[180px] rounded-md"
-                            src={feed.img}                           alt="event-image"
+                            src={feed.img} alt="event-image"
                         />
-                        <LikedIcon fill="#D2042D" className="absolute right-2 bottom-1 w-5 h-5"/>
+                        <div className="absolute right-2 bottom-1 w-5 h-5 p-1 bg-white shadow-sm rounded-full">
+                            <LikedIcon fill="#D2042D"/>
+                        </div>
                     </div>
 
                 );

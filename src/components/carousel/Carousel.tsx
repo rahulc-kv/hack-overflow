@@ -25,27 +25,30 @@ const Carousel = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="bg-black">
+        className="relative bg-gradient-to-b from-gray-100 via-gray-800 to-black">
         <SwiperSlide>
           <img
-            className="w-full h-[260px]"
-            src="/images/abc10.jpg"
+            className="object-cover w-full h-[260px] opacity-50"
+            src="/images/arts_and_crafts_mela.jpg"
             alt="image slide 1"
           />
+          <div className="absolute bottom-9 left-2 text-sm text-white">Bangalore Arts And Crafts Mela</div>
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[260px]"
-            src="/images/abc13.jpg"
+            className="object-cover w-full h-[260px] opacity-50"
+            src="/images/karaoke.jpg"
             alt="image slide 2"
           />
+          <div className="absolute bottom-9 left-2 text-sm text-white">Koramangala Karaoke Night</div>
         </SwiperSlide>
         <SwiperSlide>
           <img
-            className="w-full h-[260px]"
-            src="/images/abc15.jpg"
+            className="object-cover w-full h-[260px] opacity-50"
+            src="/images/chocolate_festival.jpg"
             alt="image slide 3"
           />
+          <div className="absolute bottom-9 left-2 text-sm text-white">Lulu Chocolate Festival</div>
         </SwiperSlide>
       </Swiper>
     </>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { FilterIcon, ListIcon, LocationIcon, SearchIcon } from '@assets/icons';
+import { FilterIcon, ListIcon, SearchIcon, ShowMap } from '@assets/icons';
 
 const MainBar = ({ list, setList }) => {
   const [showSearch, setShowSearch] = useState(false);
@@ -34,7 +34,7 @@ const MainBar = ({ list, setList }) => {
       <div className="flex absolute right-4 flex-row">
         {list ?
           (<div><ListIcon onClick={handleToggle} fill="#AEAEAE" className="mt-2 mr-4 h-[17px]" /> </div>) :
-          (<div><LocationIcon onClick={handleToggle} fill="#AEAEAE" className="mt-2 mr-4 h-[17px]" /> </div>)
+          (<div><ShowMap onClick={handleToggle} fill="#AEAEAE" className="mt-2 mr-4 h-[17px]" /> </div>)
         }
         <div><FilterIcon fill="#AEAEAE" className="mt-2 h-[17px]" /></div>
       </div>
