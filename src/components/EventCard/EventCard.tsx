@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-import { LoveIcon } from '@assets/icons';
+import { DownVoteIcon, LoveIcon, UpvoteIcon } from '@assets/icons';
 import CountDown from '@components/count-down/CountDown';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -32,7 +32,15 @@ const EventCard = ({ event, showEventInDetail }) => {
           <div className="mt-1 text-sm font-normal leading-5 text-gray-500 capitalize">
             {event?.desc}
           </div>}
-        <CountDown eventStartDate={event?.startsIn} />
+        <div className='flex justify-between'>
+          <CountDown eventStartDate={event?.startsIn} /></div>
+        <div className='flex gap-2 justify-end '>
+          <UpvoteIcon />
+          <div>
+            12
+          </div>
+          <DownVoteIcon />
+        </div>
       </div>
     </div >
   );
