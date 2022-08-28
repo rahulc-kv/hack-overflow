@@ -34,13 +34,16 @@ const EventCard = ({ event, showEventInDetail }) => {
           </div>}
         <div className='flex justify-between'>
           <CountDown eventStartDate={event?.startsIn} /></div>
-        <div className='flex gap-2 justify-end '>
-          <UpvoteIcon />
-          <div>
-            12
-          </div>
-          <DownVoteIcon />
-        </div>
+        {showEventInDetail &&
+          <>
+            <div className='flex gap-2 justify-end '>
+              <UpvoteIcon />
+              <div>
+                12
+              </div>
+              <DownVoteIcon />
+            </div>
+          </>}
       </div>
     </div >
   );
