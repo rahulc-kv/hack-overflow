@@ -15,7 +15,7 @@ const initialState = {
         description:
           'Grand Flea Market',
         image: '/images/arts_and_crafts_mela.jpg',
-        start_time: '2022-09-03T01:30:00.000Z',
+        start_time: '2022-08-28T21:30:00.000Z',
         category: 1
       }
     },
@@ -120,11 +120,11 @@ const initialState = {
         id: '8',
         title: 'Summer Pool Party',
         description:
-          'Enjoy Your Weekend with Pool Party, Belly Dance, Ramp Show, Buffet Dinner & Drink'
+          'Enjoy Your Weekend with Pool Party, Belly Dance, Ramp Show, Buffet Dinner & Drink',
+        image: '/images/boat_race.jpg',
+        start_time: '2022-09-10T04:00:00.000Z',
+        category: 4
       },
-      image: '/images/pool_party.webp',
-      start_time: '2022-11-04T12:00:00.000Z',
-      category: 4
     },
     {
       type: 'Feature',
@@ -136,11 +136,11 @@ const initialState = {
         id: '9',
         title: 'Sunburn Arena Ft. NUCLEYA',
         description:
-          'Get Ready for a massive Bass Music Explosion. Sunburn Arena with Indias biggest electronic music phenomenon, the hitmaker of "Bass Rani", "Raja Baja", and "Tota Myna" Nucleya is coming to your city for Live performance.'
-      },
-      image: '/images/musical_event.jpg',
-      start_time: '2023-10-13T12:09:00.000Z',
-      category: 4
+          'Get Ready for a massive Bass Music Explosion. Sunburn Arena with Indias biggest electronic music phenomenon, the hitmaker of "Bass Rani", "Raja Baja", and "Tota Myna" Nucleya is coming to your city for Live performance.',
+        image: '/images/classical_music.jpg',
+        start_time: '2022-10-13T12:09:00.000Z',
+        category: 4
+      }
     },
     {
       type: 'Feature',
@@ -411,43 +411,43 @@ const initialState = {
   ],
   savedFeeds: [
     {
-        id: '1',
-        img: 'https://blog.irctctourism.com/wp-content/uploads/2020/04/kerala-tourism.png',
+      id: '1',
+      img: 'https://blog.irctctourism.com/wp-content/uploads/2020/04/kerala-tourism.png',
     },
     {
-        id: '2',
-        img: 'https://s3.india.com/travel/wp-content/uploads/2016/05/Kerala-Kochi.jpg',
+      id: '2',
+      img: 'https://s3.india.com/travel/wp-content/uploads/2016/05/Kerala-Kochi.jpg',
     },
     {
-        id: '3',
-        img: 'https://www.tataaig.com/s3/Myths-of-Travel-Insurance_5afaa8565c.jpeg',
+      id: '3',
+      img: 'https://www.tataaig.com/s3/Myths-of-Travel-Insurance_5afaa8565c.jpeg',
     },
     {
-        id: '4',
-        img: 'https://mimeophotos.com/product_images/blog/tips-for-great-beach-photography-0.jpeg',
+      id: '4',
+      img: 'https://mimeophotos.com/product_images/blog/tips-for-great-beach-photography-0.jpeg',
     },
     {
-        id: '5',
-        img: 'https://pbs.twimg.com/media/DhXs5YrU8AEd_hZ.jpg'
+      id: '5',
+      img: 'https://pbs.twimg.com/media/DhXs5YrU8AEd_hZ.jpg'
     },
     {
-        id: '6',
-        img: 'https://www.keralabackwater.com/blog/wp-content/uploads/2017/05/Athirappilly-Waterfalls.jpg',
+      id: '6',
+      img: 'https://www.keralabackwater.com/blog/wp-content/uploads/2017/05/Athirappilly-Waterfalls.jpg',
     },
     {
-        id: '7',
-        img: 'https://i.pinimg.com/736x/8a/59/ab/8a59ab20e00e4a85fff3f77c634f1095.jpg',
+      id: '7',
+      img: 'https://i.pinimg.com/736x/8a/59/ab/8a59ab20e00e4a85fff3f77c634f1095.jpg',
     },
     {
-        id: '8',
-        img: 'https://media-cdn.tripadvisor.com/media/photo-s/20/be/ce/ef/mangrove-kayaking-at.jpg',
+      id: '8',
+      img: 'https://media-cdn.tripadvisor.com/media/photo-s/20/be/ce/ef/mangrove-kayaking-at.jpg',
     },
     {
-        id: '9',
-        img: 'https://pbs.twimg.com/media/DhXs5YrU8AEd_hZ.jpg',
+      id: '9',
+      img: 'https://pbs.twimg.com/media/DhXs5YrU8AEd_hZ.jpg',
     },
 
-],
+  ],
 
 };
 
