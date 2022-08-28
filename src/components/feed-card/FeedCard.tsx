@@ -25,7 +25,7 @@ const FeedCard = props => {
   };
 
   return (
-    <div className="overflow-hidden py-4 w-full h-full">
+    <div className="overflow-hidden py-4 my-4 mx-2 w-full h-full">
       <Card sx={{ maxWidth: 400 }}>
         <div className="flex justify-between w-full h-auto">
           <CardHeader

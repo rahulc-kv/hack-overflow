@@ -6,6 +6,7 @@ import RoutesPath from './RoutesPath';
 import Home from '@containers/Home';
 import DetailedView from '@containers/DetailedView';
 import Explore from '@containers/Explore';
+import Saved from '@containers/Saved';
 
 const PrivateLayout = () => {
   return (
@@ -20,7 +21,7 @@ const PrivateLayout = () => {
               element={<Navigate replace={true} to={RoutesPath.home} />}
             />
             <Route path="/explore" element={<Explore />} />
-            <Route path="/saved" element={<Home />} />
+            <Route path="/saved" element={<Saved />} />
             <Route path="/user" element={<Home />} />
             <Route path="/profile" element={<Home />} />
           </>

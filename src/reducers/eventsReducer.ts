@@ -15,7 +15,8 @@ const initialState = {
         description:
           'Grand Flea Market',
         image: '/images/arts_and_crafts_mela.jpg',
-        start_time: '2022-09-03T01:30:00.000Z'
+        start_time: '2022-09-03T01:30:00.000Z',
+        category: 1
       }
     },
     {
@@ -30,7 +31,8 @@ const initialState = {
         description:
           'Late Night Karaoke Party in Koramangala where you can buy a redeemable ticket and sing your heart out.',
         image: '/images/karaoke.jpg',
-        start_time: '2022-08-30T15:30:00.000Z'
+        start_time: '2022-08-30T15:30:00.000Z',
+        category: 4
       }
     },
     {
@@ -44,7 +46,8 @@ const initialState = {
         title: 'Lulu Chocolate Festival',
         description: 'Sale',
         image: '/images/chocolate_festival.jpg',
-        start_time: '2022-08-28T03:30:00.000Z'
+        start_time: '2022-08-28T03:30:00.000Z',
+        category: 1
       }
     },
     {
@@ -58,7 +61,8 @@ const initialState = {
         title: 'Readers Fest 2022',
         description: 'Book Fair',
         image: '/images/book_fair.jpg',
-        start_time: '2022-08-28T03:30:00.000Z'
+        start_time: '2022-08-28T03:30:00.000Z',
+        category: 1
       }
     },
     {
@@ -72,7 +76,8 @@ const initialState = {
         title: 'Savage Sunday',
         description: 'DJ Night With Dance Floor',
         image: '/images/dj_night.jpg',
-        start_time: '2022-09-01T15:00:00.000Z'
+        start_time: '2022-09-01T15:00:00.000Z',
+        category: 4
       }
     },
     {
@@ -86,7 +91,8 @@ const initialState = {
         title: 'Nehru Trophy Boat Race',
         description: 'Boat Race',
         image: '/images/boat_race.jpg',
-        start_time: '2022-09-10T04:00:00.000Z'
+        start_time: '2022-09-10T04:00:00.000Z',
+        category: 6
       }
     },
     {
@@ -100,7 +106,8 @@ const initialState = {
         title: '12 Day Motorcycle Camping Tour in Kerala',
         description: 'Motorcycle Camping Tour',
         image: '/images/motorcycle_camping_tour.jpeg',
-        start_time: '2022-09-10T04:00:00.000Z'
+        start_time: '2022-09-10T04:00:00.000Z',
+        category: 3
       }
     },
     {
@@ -115,8 +122,9 @@ const initialState = {
         description:
           'Enjoy Your Weekend with Pool Party, Belly Dance, Ramp Show, Buffet Dinner & Drink'
       },
-      image: '/images/pool_party.jpg',
-      start_time: '2022-09-04T12:00:00.000Z'
+      image: '/images/pool_party.webp',
+      start_time: '2022-11-04T12:00:00.000Z',
+      category: 4
     },
     {
       type: 'Feature',
@@ -130,8 +138,9 @@ const initialState = {
         description:
           'Get Ready for a massive Bass Music Explosion. Sunburn Arena with Indias biggest electronic music phenomenon, the hitmaker of "Bass Rani", "Raja Baja", and "Tota Myna" Nucleya is coming to your city for Live performance.'
       },
-      image: '/images/sunburn_festival.jpeg',
-      start_time: '2022-09-13T12:00:00.000Z'
+      image: '/images/musical_event.jpg',
+      start_time: '2023-10-13T12:09:00.000Z',
+      category: 4
     },
     {
       type: 'Feature',
@@ -144,7 +153,8 @@ const initialState = {
         title: 'Cloud Burst Music Festival',
         description: 'Music Festival',
         image: '/images/musical_event.jpg',
-        start_time: '2022-09-20T12:00:00.000Z'
+        start_time: '2022-09-20T12:00:00.000Z',
+        category: 4
       }
     },
     {
@@ -158,7 +168,8 @@ const initialState = {
         title: 'Masala Coffee concert - Centre Square Mall',
         description: 'Musical concert',
         image: '/images/masala_coffee_concert.jpg',
-        start_time: '2022-09-06T12:00:00.000Z'
+        start_time: '2022-09-06T12:00:00.000Z',
+        category: 4
       }
     },
     {
@@ -172,7 +183,8 @@ const initialState = {
         title: 'Novotel - Margarita Ladies Night Out',
         description: 'Party',
         image: '/images/dj_night.jpg',
-        start_time: '2022-09-07T12:00:00.000Z'
+        start_time: '2022-09-07T12:00:00.000Z',
+        category: 4
       }
     },
     {
@@ -186,7 +198,8 @@ const initialState = {
         title: 'Indiegaga Kozhikode 2022',
         description: 'The fourth edition of Indiegaga International Arts and Music Festival is coming to Kozhikode this Onam season to pep up the holiday cheer with South Indias favourite indie artistes.',
         image: '/images/indiegaga.jpeg',
-        start_time: '2022-09-02T12:00:00.000Z'
+        start_time: '2022-09-02T12:00:00.000Z',
+        category: 4
       }
     },
     {
@@ -200,7 +213,8 @@ const initialState = {
         title: 'Holiday Inn Commercial Saturday',
         description: 'Dj Party',
         image: '/images/dj_night.jpg',
-        start_time: '2022-09-02T12:00:00.000Z'
+        start_time: '2022-09-02T12:00:00.000Z',
+        category: 4
       }
     },
     {
@@ -214,7 +228,8 @@ const initialState = {
         title: 'HARISANKAR | Live Concert | DD Kollam Carnival 2022',
         description: 'Musical Concert',
         image: '/images/harishankar_concert.jpeg',
-        start_time: '2022-09-11T12:00:00.000Z'
+        start_time: '2022-09-11T12:00:00.000Z',
+        category: 4
       }
     },
     {
@@ -228,7 +243,8 @@ const initialState = {
         title: 'Oxemberg Fashion Week 2022',
         description: 'The 5th edition of Lulu Fashion Week 2022 by Oxemberg in association with Peter England',
         image: '/images/fashion.jpeg',
-        start_time: '2022-09-04T10:30:00.000Z'
+        start_time: '2022-09-04T10:30:00.000Z',
+        category: 7
       }
     },
     {
@@ -242,7 +258,8 @@ const initialState = {
         title: 'Life Of Pai - Stand Up Comedy Special by Vishnu Pai',
         description: 'Live standup comedy at the wonderful Collective Coworks at Kakkanad, Kochi',
         image: '/images/standup_comedy.jpg',
-        start_time: '2022-09-12T10:30:00.000Z'
+        start_time: '2022-09-12T10:30:00.000Z',
+        category: 4
       }
     },
     {
@@ -256,7 +273,8 @@ const initialState = {
         title: 'Utopian Dystopia - art festival',
         description: 'Utopian Dystopia is a 10-day festival focused on bridging art, design and technology.',
         image: '/images/utopia_dystopia.jpg',
-        start_time: '2022-09-14T10:30:00.000Z'
+        start_time: '2022-09-14T10:30:00.000Z',
+        category: 8
       }
     },
     {
@@ -270,7 +288,8 @@ const initialState = {
         title: 'Kochi-Muziris Biennale',
         description: 'International exhibition of contemporary art.',
         image: '/images/kochi_muziris_biennale.jpg',
-        start_time: '2022-12-12T04:30:00.000Z'
+        start_time: '2022-12-12T04:30:00.000Z',
+        category: 4
       }
     },
     {
@@ -284,7 +303,8 @@ const initialState = {
         title: 'Kid\'s Carnival',
         description: 'A kid\'s carnival accompanied by Art& Craft workshops, cartoon mascots, magic shows, book exchanges and much more.',
         image: '/images/kids_carnival.jpg',
-        start_time: '2022-10-12T04:30:00.000Z'
+        start_time: '2022-10-12T04:30:00.000Z',
+        category: 4
       }
     },
     {
@@ -298,7 +318,8 @@ const initialState = {
         title: 'Classical Music Live Session',
         description: 'Get mesmerized by the symphony and melody of the many instruments playing in sync with each other, and immerse yourself in the rhythm of the music.',
         image: '/images/classical_music.jpg',
-        start_time: '2022-10-04T04:30:00.000Z'
+        start_time: '2022-10-04T04:30:00.000Z',
+        category: 4
       }
     },
     {
@@ -312,7 +333,8 @@ const initialState = {
         title: 'Milan \'22',
         description: 'Neon themed Music Festival.',
         image: '/images/musical_event.jpg',
-        start_time: '2022-09-12T12:30:00.000Z'
+        start_time: '2022-09-12T12:30:00.000Z',
+        category: 4
       }
     },
     {
@@ -326,7 +348,8 @@ const initialState = {
         title: 'Ara-Gora Comedy Open mic nights',
         description: 'Witness comedians test and hone content in what is the equivalent of net practice in stand up comedy',
         image: '/images/standup_comedy.jpg',
-        start_time: '2022-09-12T12:30:00.000Z'
+        start_time: '2022-09-12T12:30:00.000Z',
+        category: 4
       }
     },
     {
@@ -340,10 +363,92 @@ const initialState = {
         title: 'SATURDAY NIGHT',
         description: 'Gears and Garage brings to you Manoj Krishna Originals.',
         image: '/images/dj_night.jpg',
-        start_time: '2022-09-17T12:30:00.000Z'
+        start_time: '2022-09-17T12:30:00.000Z',
+        category: 4
       }
     },
-  ]
+  ],
+  categories: [{
+    id: 1,
+    image: '/images/shopping.jpg',
+    categoryName: 'SHOPPING'
+  },
+  {
+    id: 2,
+    image: '/images/destination.jpeg',
+    categoryName: 'DESTINATION'
+
+  },
+  {
+    id: 3,
+    image: '/images/drive.jpeg',
+    categoryName: 'DRIVE'
+
+  },
+  {
+    id: 4,
+    image: '/images/entertainment.jpg',
+    categoryName: 'ENTERTAINMENT'
+
+  },
+  {
+    id: 5,
+    image: '/images/food.jpeg',
+    categoryName: 'FOOD'
+
+  }, {
+    id: 6,
+    image: '/images/sports.jpg',
+    categoryName: 'SPORTS'
+
+  },
+  {
+    id: 7,
+    image: '/images/informative.jpg',
+    categoryName: 'INFORMATIVE'
+  }
+
+  ],
+  savedFeeds: [
+    {
+        id: '1',
+        img: 'https://blog.irctctourism.com/wp-content/uploads/2020/04/kerala-tourism.png',
+    },
+    {
+        id: '2',
+        img: 'https://s3.india.com/travel/wp-content/uploads/2016/05/Kerala-Kochi.jpg',
+    },
+    {
+        id: '3',
+        img: 'https://www.tataaig.com/s3/Myths-of-Travel-Insurance_5afaa8565c.jpeg',
+    },
+    {
+        id: '4',
+        img: 'https://mimeophotos.com/product_images/blog/tips-for-great-beach-photography-0.jpeg',
+    },
+    {
+        id: '5',
+        img: 'https://pbs.twimg.com/media/DhXs5YrU8AEd_hZ.jpg'
+    },
+    {
+        id: '6',
+        img: 'https://www.keralabackwater.com/blog/wp-content/uploads/2017/05/Athirappilly-Waterfalls.jpg',
+    },
+    {
+        id: '7',
+        img: 'https://i.pinimg.com/736x/8a/59/ab/8a59ab20e00e4a85fff3f77c634f1095.jpg',
+    },
+    {
+        id: '8',
+        img: 'https://media-cdn.tripadvisor.com/media/photo-s/20/be/ce/ef/mangrove-kayaking-at.jpg',
+    },
+    {
+        id: '9',
+        img: 'https://pbs.twimg.com/media/DhXs5YrU8AEd_hZ.jpg',
+    },
+
+],
+
 };
 
 export const eventSlice = createSlice({
@@ -352,10 +457,13 @@ export const eventSlice = createSlice({
   reducers: {
     addNewEvent: (state, { payload }) => {
       state.events.push(payload);
+    },
+    addNewSavedFeed: (state, { payload }) => {
+      state.savedFeeds.push(payload);
     }
   }
 });
 
-export const { addNewEvent } = eventSlice.actions;
+export const { addNewEvent, addNewSavedFeed } = eventSlice.actions;
 
 export default eventSlice.reducer;

@@ -1,60 +1,56 @@
 import React from 'react';
 
-import Cards from '@components/cards/Cards';
+import { RootState } from '@store/reducers';
+import { useSelector } from 'react-redux';
+import EventCard from '@components/EventCard/EventCard';
+import EventCategory from '@components/EventCard/EventCategory';
 
 /* eslint-disable max-len */
 const Slider = () => {
   const sliderHeaders = [
     {
       title: 'Categories',
-      imgArray: [
-        '/images/abc.jpg',
-        '/images/abc1.jpg',
-        '/images/abc2.jpg',
-        '/images/abc3.jpg',
-        '/images/abc4.jpg',
-        '/images/abc6.jpg'
-      ]
     },
     {
       title: 'Most Popular',
-      imgArray: [
-        '/images/abc9.jpg',
-        '/images/abc8.jpg',
-        '/images/abc7.jpg',
-        '/images/abc10.jpg',
-        '/images/abc11.jpg',
-        '/images/abc12.png'
-      ]
     },
     {
       title: 'Recommended For You',
-      imgArray: [
-        '/images/abc16.jpg',
-        '/images/abc17.jpg',
-        '/images/abc21.jpg',
-        '/images/abc18.jpg',
-        '/images/abc19.jpg',
-        '/images/abc20.jpg'
-      ]
     }
   ];
+  const { events, categories } = useSelector(
+    (state: RootState) => state.rootReducer.eventsReducer
+  );
   return (
     <div className="w-full">
       <div className="flex  flex-col">
         {sliderHeaders.map((headerData, index) => (
-          <div key={index} className="flex flex-col py-4 my-3 bg-white shadow-lg drop-shadow-sm">
-            <div className="pl-2 text-sm font-medium text-black">
+          <div key={index} className="flex flex-col pt-4 mt-3 bg-white shadow-md drop-shadow-sm">
+            <div className="pl-2 mb-4 text-base font-semibold text-black">
               {headerData.title}
             </div>
-            <div className="flex overflow-auto flex-row customTransparentScroll">
-              {headerData.imgArray.map((imgUrl, i) => (
-                <div key={i} className="m-2">
-                  <Cards img={imgUrl} />
-                </div>
-              ))}
-            </div>
-          </div>
+            <div className="flex overflow-auto flex-row mx-3 h-full customTransparentScroll">
+              {index == 0 ?
+                <div className='flex mr-4 h-[200px]'>
+                  {categories.map(category => (
+                    <EventCategory category={category} key={category.id} />))}</div>
+                :
+                <>
+                  {events.map(event => (
+                    <div key={event.properties.id} className='mr-4 w-full h-full'>
+                      <EventCard
+                        event={{
+                          eventName: event.properties.title,
+                          desc: event.properties.description,
+                          imgSRC: event.properties.image,
+                          startsIn: event.properties.start_time
+                        }}
+                        showEventInDetail={false}
+                      />
+                    </div>
+                  ))}
+                </>}
+            </div>          </div>
         ))}
       </div>
     </div>

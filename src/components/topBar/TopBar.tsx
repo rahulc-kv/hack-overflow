@@ -25,7 +25,7 @@ const TopBar: FC<TopBarProps> = props => {
   return (
     <div
       className="flex sticky top-0 z-50 flex-row justify-between py-5
-     px-4 w-full font-inter bg-white border-b-[1px] border-[#E5E7EB] sm:px-8">
+     px-4 w-full h-14 font-inter bg-white border-b-[1px] border-[#E5E7EB] sm:px-8">
       <div className="flex items-center text-base font-semibold text-blackGreen sm:text-2xl">
         {showNavigateBack && (
           <LeftArrow
