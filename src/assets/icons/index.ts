@@ -108,6 +108,8 @@ import { ReactComponent as ExploreIcon } from './explore.svg';
 import {ReactComponent as LocationIcon2} from './location2.svg';
 import {ReactComponent as ListIcon} from './list.svg';
 import {ReactComponent as FilterIcon} from './filter.svg';
+import {ReactComponent as LoveIcon} from './loveIcon.svg';
+
 
 export {
   AmericanExpressLogo,
@@ -219,5 +221,6 @@ export {
   ExploreIcon,
   LocationIcon2,
   ListIcon,
-  FilterIcon
+  FilterIcon,
+  LoveIcon
 };

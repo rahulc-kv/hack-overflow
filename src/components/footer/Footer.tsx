@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <>
-      <div className=" fixed bottom-0 z-10 mt-10 w-full dark:border-gray-700">
+      <div className="fixed bottom-0 z-10 mt-10 w-full bg-slate-50">
         <div className="flex flex-col w-full h-12 "></div>
         <footer
           className="fixed
@@ -24,7 +24,7 @@ const Footer = () => {
              text-3xl 
             ">
           <button
-            className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
+            className={`w-1/4 h-12 text-sm font-bold text-white  bg-slate-50 
            outline-none shadow-sm  `}
             onClick={() => handleNavigate('home')}
           >
@@ -35,7 +35,7 @@ const Footer = () => {
             </div>
           </button>
           <button
-            className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
+            className={`w-1/4 h-12 text-sm font-bold text-white  bg-slate-50 
             outline-none shadow-sm `}
             onClick={() => handleNavigate('explore')}>
             <div className="flex gap-x-1 justify-center items-center">
@@ -43,14 +43,14 @@ const Footer = () => {
             </div>
           </button>
           <button
-            className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
+            className={`w-1/4 h-12 text-sm font-bold text-white  bg-slate-50 
             outline-none shadow-sm`}>
             <div className="flex gap-x-1 justify-center items-center">
               <SavedIcon onClick={() => handleNavigate('saved')}
                 fill={` ${buttonId == '/saved' ? ('#000000') : ('#AEAEAE')}`} className="w-5 h-5" />
             </div>
           </button>
-          <button className={`w-1/4 h-12 text-sm font-bold text-white  bg-white 
+          <button className={`w-1/4 h-12 text-sm font-bold text-white  bg-slate-50 
             outline-none shadow-sm `}>
             <div className="flex gap-x-1 justify-center items-center">
               <UserIcon onClick={() => handleNavigate('user')}
